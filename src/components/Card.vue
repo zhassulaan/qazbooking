@@ -43,7 +43,7 @@ const props = defineProps({
 
 <style scoped lang='scss'>
 .card {
-	width: 282px;
+	width: 14.6875vw;
 	height: 286px;
 	border: 1px solid var(--clr-grey5);
 	border-radius: 16px;
