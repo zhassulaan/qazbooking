@@ -3,6 +3,7 @@
 @import './styles/layouts/header.scss';
 @import './styles/layouts/footer.scss';
 @import './styles/pages/home.scss';
+@import './styles/pages/interesting.scss';
 
 input {
 	border: none;
@@ -28,6 +29,11 @@ h1 {
 	font-size: 48px;
 	font-weight: 600;
 	color: var(--clr-grey);
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 600;
 }
 
 h3 {

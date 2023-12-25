@@ -1,0 +1,12 @@
+.interesting {
+	padding: 342px 18.28125vw 188px;
+	.breadcrumbs {
+		margin-bottom: 40px;
+	}
+	&-content {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 32px 1.5625vw;
+		margin-top: 32px;
+	}
+}

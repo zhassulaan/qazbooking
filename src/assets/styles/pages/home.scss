@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	grid-gap: 100px;
-	padding: 226px 18.28125vw 235px;
+	padding: 238px 18.28125vw 235px;
 	.main,
 	.about {
 		width: 100%;
@@ -47,8 +47,11 @@
 		display: flex;
 		gap: 1.5625vw;
 	}
-	.category-content {
-		overflow: scroll;
+	.category,
+	.interesting {
+		&-content {
+			overflow: scroll;
+		}
 	}
 	.popular-content__header,
 	.review-header {

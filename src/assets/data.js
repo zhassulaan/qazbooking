@@ -24,6 +24,9 @@ import tour4 from '@/assets/images/tour4.jpeg';
 import blog1 from '@/assets/images/blog1.jpeg';
 import blog2 from '@/assets/images/blog2.jpeg';
 import blog3 from '@/assets/images/blog3.jpeg';
+import blog4 from '@/assets/images/blog4.jpeg';
+import blog5 from '@/assets/images/blog5.jpeg';
+import blog6 from '@/assets/images/blog6.jpeg';
 
 export const cities = ['Алматы', 'Астана', 'Алаколь', 'Боровое', 'Сарыагаш'];
 
@@ -232,6 +235,18 @@ export const blogs = [
 	}, {
 		title: 'Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa',
 		image: blog3,
+		date: '12.05.2023'
+	}, {
+		title: 'Отдохни сегодня - заплати завтра: туры в кредит под 1%',
+		image: blog4,
+		date: '12.05.2023'
+	}, {
+		title: 'Канада: бесплатные обзорные экскурсии',
+		image: blog5,
+		date: '23.12.2023'
+	}, {
+		title: 'Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa',
+		image: blog6,
 		date: '12.05.2023'
 	}
 ];

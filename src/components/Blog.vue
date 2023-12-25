@@ -1,5 +1,5 @@
 <template>
-	<div class='blog btn'>
+	<div class='blog'>
 		<div class='blog-image'>
 			<img :src='info.image' :alt='info.name' />
 		</div>
@@ -8,18 +8,26 @@
 			<p class='blog-content__date'>{{ info.date }}</p>
 			<h5 class='blog-content__title'>{{ info.title }}</h5>
 		</div>
+
+		<div v-if='button' class='blog-button btb'>
+			<Arrow />
+		</div>
 	</div>
 </template>
 
 <script setup>
+import Arrow from '@/components/icons/Arrow.vue';
+
 const props = defineProps({
 	info: Object,
+	button: Boolean,
 });
 </script>
 
 <style scoped lang='scss'>
 .blog {
-	width: 386px;
+	position: relative;
+	min-width: 20.10417vw;
 	&-image {
 		width: 100%;
 		height: 197px;
@@ -45,6 +53,19 @@ const props = defineProps({
 		&__date {
 			color: var(--clr-grey4);
 		}
+	}
+	&-button {
+		position: absolute;
+		top: 40.93618%;
+		right: 5.4423%;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background-color: var(--clr-white);
 	}
 }
 </style>
