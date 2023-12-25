@@ -1,6 +1,17 @@
 <template>
   <div class='home'>
-    <div></div>
+    <div class='main'>
+      <img
+        src='@/assets/images/home1.jpeg'
+        alt='home image'
+        class='main-image'
+      />
+      <div class='main-content'>
+        <h1 class='main-content__title'>Лучшие места для вашего отдыха</h1>
+        <h4 class='main-content__text'>Поиск предложений на отели, дома и многое другое…</h4>
+        <Search />
+      </div>
+    </div>
 
     <div class='category'>
       <h3>Категории</h3>
@@ -133,11 +144,23 @@
       </div>
     </div>
 
-    <div></div>
+    <div class='about'>
+      <div class='about-content'>
+        <h3 class='about-content__title'>Qazbooking.kz</h3>
+        <p class='about-content__text'>Это сервис онлайн бронирования хостелов и баз отдыха. С его помощью можно легко и удобно запланировать своё путешествие в пару кликов. Не придётся много раз звонить, если линии заняты, или долго ожидать ответа в WhatsApp. Бронирование проходит в онлайн режиме.</p>
+        <p class='about-content__text'>На Qazbooking.kz собрано большое количество хостелов Алматы, Астаны, Актау, Караганды, Талгара, Уральска и других городов Казахстан</p>
+      </div>
+      <img
+        src='@/assets/images/home2.jpeg'
+        alt='home image'
+        class='about-image'
+      />
+    </div>
   </div>
 </template>
 
 <script setup>
+import Search from '@/components/Search.vue';
 import Category from '@/components/Category.vue';
 import Card from '@/components/Card.vue';
 import Review from '@/components/Review.vue';
