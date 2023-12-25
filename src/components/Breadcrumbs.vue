@@ -2,22 +2,25 @@
 	<div class='breadcrumbs'>
 		<div class='breadcrumbs-element'>
 			<p class='point'>●</p>
-			<p class='text'>Главная</p>
+			<p class='text btn' @click="router.push('/')">Главная</p>
 		</div>
 		<div
-			v-for='(item, index) in text'
+			v-for='(item, index) in info'
 			:key='index'
 			class='breadcrumbs-element'
 		>
 			<p class='point'>●</p>
-			<p class='text'>{{ item }}</p>
+			<p class='text btn' @click="router.push(`/${item.id}`)">{{ item.text }}</p>
 		</div>
 	</div>
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 const props = defineProps({
-	text: Array
+	info: Array
 });
 </script>
 
@@ -30,7 +33,7 @@ const props = defineProps({
 		gap: .20833vw;
 		.point,
 		.text {
-			color: var(--clr-blue);
+			color: var(--clr-grey6);
 		}
 		.point {
 			padding: 0 .3125vw;
@@ -38,10 +41,10 @@ const props = defineProps({
 		.text {
 			font-size: 14px;
 		}
-		&:first-child {
+		&:last-child {
 			.point,
 			.text {
-				color: var(--clr-grey6);
+				color: var(--clr-blue);
 			}
 		}
 	}

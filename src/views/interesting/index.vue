@@ -1,11 +1,11 @@
 <template>
   <div class='interesting'>
-    <Breadcrumbs :text="['Интересное']" />
+    <Breadcrumbs :info='breadcrumbs' />
     <h2>Интересное</h2>
     <div class='interesting-content'>
       <Blog
-        v-for='(blog, index) in blogs'
-        :key='index'
+        v-for='blog in blogs'
+        :key='blog.id'
         :info='blog'
         :button='true'
       />
@@ -17,4 +17,9 @@
 import Breadcrumbs from '@/components/Breadcrumbs.vue';
 import Blog from '@/components/Blog.vue';
 import { blogs } from '@/assets/data';
+
+const breadcrumbs = [{
+  id: 'interesting',
+  text: 'Интересное'
+}];
 </script>

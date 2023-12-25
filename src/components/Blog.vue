@@ -9,19 +9,29 @@
 			<h5 class='blog-content__title'>{{ info.title }}</h5>
 		</div>
 
-		<div v-if='button' class='blog-button btb'>
+		<div
+			v-if='button'
+			class='blog-button btn'
+			@click='redirectToBlog(info.id)'
+		>
 			<Arrow />
 		</div>
 	</div>
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
 import Arrow from '@/components/icons/Arrow.vue';
 
+const router = useRouter();
 const props = defineProps({
 	info: Object,
 	button: Boolean,
 });
+
+function redirectToBlog(id) {
+	router.push(`/interesting/${id}`);
+}
 </script>
 
 <style scoped lang='scss'>

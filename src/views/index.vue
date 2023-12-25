@@ -127,15 +127,15 @@
       </div>
     </div>
 
-    <div class='interesting'>
-      <div class='interesting-header'>
+    <div class='blogs'>
+      <div class='blogs-header'>
         <h3>Интересное</h3>
-        <div class='interesting-header__button btn'>
+        <div class='blogs-header__button btn' @click="router.push('/interesting')">
           <h6>Читать все</h6>
           <Arrow />
         </div>
       </div>
-      <div class='interesting-content'>
+      <div class='blogs-content'>
         <Blog
           v-for='(blog,index) in blogs'
           :key='index'
@@ -160,6 +160,7 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
 import Search from '@/components/Search.vue';
 import Category from '@/components/Category.vue';
 import Card from '@/components/Card.vue';
@@ -168,4 +169,6 @@ import Box from '@/components/Box.vue';
 import Blog from '@/components/Blog.vue';
 import Arrow from '@/components/icons/Arrow.vue';
 import { categories, hostels, tours, recreation_centers, leisure_entertainments, reviews, about, blogs } from '@/assets/data';
+
+const router = useRouter();
 </script>

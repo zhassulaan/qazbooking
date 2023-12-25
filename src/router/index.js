@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/index.vue';
-import Interesting from '@/views/interesting.vue';
+import Interesting from '@/views/interesting/index.vue';
+import InterestingDetail from '@/views/interesting/[id].vue';
 import Profile from '@/views/Profile.vue';
 
 const router = createRouter({
@@ -14,6 +15,10 @@ const router = createRouter({
       path: '/interesting',
       name: 'interesting',
       component: Interesting
+    }, {
+      path: '/interesting/:id',
+      name: 'interesting - detail',
+      component: InterestingDetail
     }, {
       path: '/profile',
       name: 'profile',
