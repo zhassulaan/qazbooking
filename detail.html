@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>QazBooking | Detail</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-touch-icon-114x114.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/common.js"></script>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="header-wrap box">
+			<div class="header-wrap__line horizontal horizontal-inline">
+				<a href="index.html" class="header-logo">
+					<img
+						src="assets/icons/logo.svg"
+						alt="QazBooking"
+						class="header-logo__desktop"
+					/>
+					<img
+						src="assets/icons/logo-mobile.svg"
+						alt="QazBooking"
+						class="header-logo__mobile"
+					/>
+				</a>
+
+				<div class="header-location horizontal horizontal-inline btn" onclick="handleMenu('location_menu')">
+					<div class="icon">
+						<img src="assets/icons/location.svg" alt="Location" />
+					</div>
+					<p class="text">Алматы</p>
+
+					<div id="location_menu" class="menu">
+						<ul class="menu-wrap vertical">
+							<li class="menu-wrap__item btn">
+								<p class="text">Алматы</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Астана</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Алаколь</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Боровое</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Сарыагаш</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header-links horizontal horizontal-inline">
+					<a href="interestings.html" class="text">Интересное</a>
+					<div class="header-links__social horizontal">
+						<a href="#" class="icon">
+							<img src="assets/icons/facebook.svg" alt="Facebook" />
+						</a>
+						<a href="https://www.instagram.com/alakol_zona_otdykha_amilina/" class="icon">
+							<img src="assets/icons/instagram.svg" alt="Instagram" />
+						</a>
+					</div>
+				</div>
+
+				<button type="submit" class="button" onclick="handleModal('auth')">
+					<img src="assets/icons/auth.svg" alt="Auth" />
+					<p class="button-text">Войти</p>
+				</button>
+			</div>
+
+			<div class="header-menu horizontal scroll">
+				<a href="filter.html">
+					<h5 class="text">Хостелы</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Базы отдыха</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Активный отдых</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Туры</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Оздоровительный отдых</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Детские лагеря</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Транспорт</h5>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- MAIN -->
+	<main class="detail main">
+		<div class="box">
+			<div class="breadcrumbs">
+				<div class="breadcrumbs-link">
+					<p class="dot">•</p>
+					<a href="index.html" class="text">Главная</a>
+				</div>
+				<div class="breadcrumbs-link">
+					<p class="dot">•</p>
+					<a href="filter.html" class="text">Категории</a>
+				</div>
+				<div class="breadcrumbs-link">
+					<p class="dot">•</p>
+					<a href="filter.html" class="text">Туры</a>
+				</div>
+				<div class="breadcrumbs-link">
+					<p class="dot">•</p>
+					<p class="text">Кольсайские озёра и озеро Каинды за 1 день и 1 ночь</p>
+				</div>
+			</div>
+
+			<div class="detail-wrap vertical">
+				<section class="place vertical">
+					<div class="place-preview vertical">
+						<div class="place-preview__top horizontal">
+							<h2>Кольсайские озёра и озеро Каинды за 1 день и 1 ночь</h2>
+
+							<ul class="action_list horizontal desktop">
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/bubble_chat.svg" alt="Chat" />
+									<p>Написать</p>
+								</li>
+
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/share.svg" alt="Share" />
+									<p>Поделиться</p>
+								</li>
+
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/favourite/default.svg" alt="Favourite" />
+									<p>Сохранить</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="place-preview__bottom horizontal horizontal-inline">
+							<div class="desktop">
+								<a href="filter.html">
+									<h5 class="type">Туры</h5>
+								</a>
+
+								<div class="location">
+									<img src="assets/icons/location2.svg" alt="Location" />
+									<p class="location-text bigtext">Алматинская область</p>
+								</div>
+							</div>
+
+							<div class="review2">
+								<div>
+									<p class="title bigtext">453 отзывов</з>
+									<p class="text bigtext btn" onclick="handleModal('review_write')">Написать отзыв</з>
+								</div>
+
+								<div class="rating">
+									<p class="rating-text">9.6</p>
+								</div>
+							</div>
+
+							<ul class="action_list horizontal mobile">
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/bubble_chat.svg" alt="Chat" />
+									<p class="action-text">Написать</p>
+								</li>
+
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/share.svg" alt="Share" />
+									<p class="action-text">Поделиться</p>
+								</li>
+
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/favourite/default.svg" alt="Favourite" />
+									<p class="action-text">Сохранить</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="place-galery horizontal">
+						<img
+							src="assets/images/tour1.jpeg"
+							alt="Tour 1"
+							class="place-galery__main image btn desktop"
+							onclick="handleModal('galery')"
+						/>
+		
+						<div class="place-galery__secondary wrap scroll">
+							<img
+								src="assets/images/tour1.jpeg"
+								alt="Tour 1"
+								class="image btn mobile"
+								onclick="handleModal('galery')"
+							/>
+							<img
+								src="assets/images/tour1.jpeg"
+								alt="Tour 1"
+								class="image btn"
+								onclick="handleModal('galery')"
+							/>
+							<img
+								src="assets/images/tour2.jpeg"
+								alt="Tour 2"
+								class="image btn"
+								onclick="handleModal('galery')"
+							/>
+							<img
+								src="assets/images/tour3.jpeg"
+								alt="Tour 3"
+								class="image btn"
+								onclick="handleModal('galery')"
+							/>
+							<img
+								src="assets/images/tour4.jpeg"
+								alt="Tour 4"
+								class="image btn"
+								onclick="handleModal('galery')"
+							/>
+						</div>
+					</div>
+
+					<div class="vertical mobile">
+						<a href="filter.html">
+							<h5 class="type">Туры</h5>
+						</a>
+
+						<div class="location">
+							<img src="assets/icons/location2.svg" alt="Location" />
+							<p class="location-text bigtext">Алматинская область</p>
+						</div>
+					</div>
+
+					<div class="place-info horizontal">
+						<div class="place-info__left vertical">
+							<div class="description">
+								<h2 class="title">Описание</h2>
+								<p class="text">Три озера, три жемчужины, которые находятся на территории национального природного парка "Кольсай Кольдери", расположены на высоте от 1800 до 2800 метров над уровнем моря. Каждое озеро по своему очаровательно. Первое озеро — великолепное и самое популярное среди туристов. Здесь есть и гостевые домики и катание на лошадях. Над загадочным озером Каинды высятся 100 летние ели, сохранившие под водой ветки и хвою из за очень холодной воды.Сюда приезжают на специальном транспорте высокой проходимости (примерно 1 час от посоелка) по горной дороге. Девственная природа, пешие походы, конные маршруты, уникальное высокогорье, красивые и причудливые скалы -это будет незабываемый для Вас отдых!</p>
+							</div>
+
+							<div class="useful">
+								<h2 class="title">Полезная информация</h2>
+								<div class="useful-content horizontal">
+									<ul class="desc-list vertical">
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/arrow-down.svg" alt="Arrow down" />
+											<p class="text">Время выезда: 06:00</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/arrow-up.svg" alt="Arrow up" />
+											<p class="text">Время прибытия: 00:00</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/lock_key.svg" alt="Lock key" />
+											<p class="text">Количество мест: 9</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/stop_watch.svg" alt="Stop watch" />
+											<p class="text">Предварительная регистрация: Да</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/location3.svg" alt="Location" />
+											<p class="text">Расстояние до места: 350 км</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/iconoir_parking.svg" alt="Iconoir parking" />
+											<p class="text">Парковка</p>
+										</li>
+									</ul>
+
+									<ul class="desc-list vertical">
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/satellite.svg" alt="Satellite" />
+											<p class="text">Спутниковая связь</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/lock_key.svg" alt="Lock key" />
+											<p class="text">Персональные сумочки</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/taxi.svg" alt="Taxi" />
+											<p class="text">Услуги трансфера</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/maps_location.svg" alt="Maps location" />
+											<p class="text">Гид</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/maps_search.svg" alt="Maps search" />
+											<p class="text">Карта местности</p>
+										</li>
+										<li class="desc-item horizontal horizontal-inline">
+											<img src="assets/icons/kettle.svg" alt="Kettle" />
+											<p class="text">Вкусный чай</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="variant">
+								<h2 class="title">Варианты</h2>
+								<div class="variant-content vertical">
+									<div id="carousel1" class="card3">
+										<div class="card horizontal">
+											<div class="card-galery vertical">
+												<div class="card-galery__main">
+													<img
+														src="assets/images/arleon4.png"
+														alt="Arleon 4"
+														class="image"
+													/>
+													<img
+														src="assets/images/hostel1.jpeg"
+														alt="Arleon 1"
+														class="image active"
+													/>
+													<img
+														src="assets/images/arleon2.png"
+														alt="Arleon 2"
+														class="image"
+													/>
+													<img
+														src="assets/images/arleon3.png"
+														alt="Arleon 3"
+														class="image"
+													/>
+													<img
+														src="assets/images/arleon4.png"
+														alt="Arleon 4"
+														class="image"
+													/>
+													<img
+														src="assets/images/hostel1.jpeg"
+														alt="Arleon 1"
+														class="image"
+													/>
+												</div>
+
+												<div class="carousel">
+													<div class="carousel-inner horizontal">
+														<img
+															src="assets/images/arleon4.png"
+															alt="Arleon 4"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/hostel1.jpeg"
+															alt="Arleon 1"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon2.png"
+															alt="Arleon 2"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon3.png"
+															alt="Arleon 3"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon4.png"
+															alt="Arleon 4"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/hostel1.jpeg"
+															alt="Arleon 1"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-content">
+												<h4 class="card-content__title">9-местный Мерседес</h4>
+												<ul class="desc-list wrap">
+													<li class="desc-item">
+														<img src="assets/icons/soft_drink.svg" alt="Soft drink" />
+														<p class="text">Вода</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/taxi.svg" alt="Taxi" />
+														<p class="text">Трансфер</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/apple.svg" alt="Apple" />
+														<p class="text">Снеки</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/maps_location.svg" alt="Maps location" />
+														<p class="text">Гид</p>
+													</li>
+												</ul>
+
+												<div class="card-content__fotter horizontal">
+													<div class="left vertical">
+														<h6 class="left-title">Условия:</h6>
+														<p class="left-text">Перекус</p>
+														<p class="left-text">Оплата не возвращается</p>
+														<a href="hostels.html" class="left-button horizontal horizontal-inline btn">
+															<p class="left-button__text">Подробнее</p>
+															<img src="assets/icons/chevron-blue.svg" alt="Right arrow" />
+														</a>
+													</div>
+
+													<div class="right">
+														<div class="price_box">
+															<div class="price">
+																<h4 class="price-text">12 500</h4>
+																<img src="assets/icons/currency.svg" alt="Tenge" />
+															</div>
+															<p class="price-description">цена за 1 человека</p>
+														</div>
+
+														<button type="submit" class="button">
+															<p class="button-text">Связаться</p>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<script>initializeCarousel("carousel1");</script>
+
+									<div id="carousel2" class="card3">
+										<div class="card horizontal">
+											<div class="card-galery vertical">
+												<div class="card-galery__main">
+													<img
+														src="assets/images/arleon4.png"
+														alt="Arleon 4"
+														class="image"
+													/>
+													<img
+														src="assets/images/hostel1.jpeg"
+														alt="Arleon 1"
+														class="image active"
+													/>
+													<img
+														src="assets/images/arleon2.png"
+														alt="Arleon 2"
+														class="image"
+													/>
+													<img
+														src="assets/images/arleon3.png"
+														alt="Arleon 3"
+														class="image"
+													/>
+													<img
+														src="assets/images/arleon4.png"
+														alt="Arleon 4"
+														class="image"
+													/>
+													<img
+														src="assets/images/hostel1.jpeg"
+														alt="Arleon 1"
+														class="image"
+													/>
+												</div>
+
+												<div class="carousel">
+													<div class="carousel-inner horizontal">
+														<img
+															src="assets/images/arleon4.png"
+															alt="Arleon 4"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/hostel1.jpeg"
+															alt="Arleon 1"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon2.png"
+															alt="Arleon 2"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon3.png"
+															alt="Arleon 3"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon4.png"
+															alt="Arleon 4"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/hostel1.jpeg"
+															alt="Arleon 1"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-content">
+												<h4 class="card-content__title">9-местный Мерседес</h4>
+												<ul class="desc-list wrap">
+													<li class="desc-item">
+														<img src="assets/icons/soft_drink.svg" alt="Soft drink" />
+														<p class="text">Вода</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/taxi.svg" alt="Taxi" />
+														<p class="text">Трансфер</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/apple.svg" alt="Apple" />
+														<p class="text">Снеки</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/maps_location.svg" alt="Maps location" />
+														<p class="text">Гид</p>
+													</li>
+												</ul>
+
+												<div class="card-content__fotter horizontal">
+													<div class="left vertical">
+														<h6 class="left-title">Условия:</h6>
+														<p>Перекус</p>
+														<p>Оплата не возвращается</p>
+														<a href="hostels.html" class="left-button horizontal horizontal-inline btn">
+															<p class="left-button__text">Подробнее</p>
+															<img src="assets/icons/chevron-blue.svg" alt="Right arrow" />
+														</a>
+													</div>
+
+													<div class="right">
+														<div class="price_box">
+															<div class="price">
+																<h4 class="price-text">12 500</h4>
+																<img src="assets/icons/currency.svg" alt="Tenge" />
+															</div>
+															<p class="price-description">цена за 1 человека</p>
+														</div>
+
+														<button type="submit" class="button">
+															<p class="button-text">Связаться</p>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<script>initializeCarousel("carousel2");</script>
+
+									<div id="carousel3" class="card3">
+										<div class="card horizontal">
+											<div class="card-galery vertical">
+												<div class="card-galery__main">
+													<img
+														src="assets/images/arleon4.png"
+														alt="Arleon 4"
+														class="image"
+													/>
+													<img
+														src="assets/images/hostel1.jpeg"
+														alt="Arleon 1"
+														class="image active"
+													/>
+													<img
+														src="assets/images/arleon2.png"
+														alt="Arleon 2"
+														class="image"
+													/>
+													<img
+														src="assets/images/arleon3.png"
+														alt="Arleon 3"
+														class="image"
+													/>
+													<img
+														src="assets/images/arleon4.png"
+														alt="Arleon 4"
+														class="image"
+													/>
+													<img
+														src="assets/images/hostel1.jpeg"
+														alt="Arleon 1"
+														class="image"
+													/>
+												</div>
+
+												<div class="carousel">
+													<div class="carousel-inner horizontal">
+														<img
+															src="assets/images/arleon4.png"
+															alt="Arleon 4"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/hostel1.jpeg"
+															alt="Arleon 1"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon2.png"
+															alt="Arleon 2"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon3.png"
+															alt="Arleon 3"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/arleon4.png"
+															alt="Arleon 4"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+														<img
+															src="assets/images/hostel1.jpeg"
+															alt="Arleon 1"
+															class="image carousel-item"
+															tabindex="0"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<div class="card-content">
+												<h4 class="card-content__title">9-местный Мерседес</h4>
+												<ul class="desc-list wrap">
+													<li class="desc-item">
+														<img src="assets/icons/soft_drink.svg" alt="Soft drink" />
+														<p class="text">Вода</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/taxi.svg" alt="Taxi" />
+														<p class="text">Трансфер</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/apple.svg" alt="Apple" />
+														<p class="text">Снеки</p>
+													</li>
+													<li class="desc-item">
+														<img src="assets/icons/maps_location.svg" alt="Maps location" />
+														<p class="text">Гид</p>
+													</li>
+												</ul>
+
+												<div class="card-content__fotter horizontal">
+													<div class="left vertical">
+														<h6 class="left-title">Условия:</h6>
+														<p>Перекус</p>
+														<p>Оплата не возвращается</p>
+														<a href="hostels.html" class="left-button horizontal horizontal-inline btn">
+															<p class="left-button__text">Подробнее</p>
+															<img src="assets/icons/chevron-blue.svg" alt="Right arrow" />
+														</a>
+													</div>
+
+													<div class="right">
+														<div class="price_box">
+															<div class="price">
+																<h4 class="price-text">12 500</h4>
+																<img src="assets/icons/currency.svg" alt="Tenge" />
+															</div>
+															<p class="price-description">цена за 1 человека</p>
+														</div>
+
+														<button type="submit" class="button">
+															<p class="button-text">Связаться</p>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<script>initializeCarousel("carousel3");</script>
+								</div>
+							</div>
+						</div>
+
+						<div class="place-info__right vertical">
+							<div class="advantages vertical">
+								<h5>Преимущества этого варианта</h5>
+								<p class="advantages-text">Идеально подходит для того, чтобы остановиться на 10 ночей!</p>
+
+								<div class="big horizontal">
+									<img
+										src="assets/icons/award.svg"
+										alt="award"
+										height="24px"
+									/>
+									<p class="advantages-text">Отличное расположение: высокие оценки от недавно побывавших гостей (4,7)</p>
+								</div>
+
+								<div class="small horizontal">
+									<img
+										src="assets/icons/directions.svg"
+										alt="directions"
+										height="24px"
+									/>
+									<p class="advantages-text">Достопримечательности</p>
+								</div>
+
+								<div class="small horizontal">
+									<img
+										src="assets/icons/directions.svg"
+										alt="directions"
+										height="24px"
+									/>
+									<p class="advantages-text">Парк рядом</p>
+								</div>
+
+								<button type="submit" class="button">
+									<p class="button-text">Позвонить</p>
+								</button>
+							</div>
+
+							<div class="locations vertical">
+								<h4 class="locations-title">Локация на карте</h4>
+								<div class="location">
+									<img src="assets/icons/location4.svg" alt="Location" />
+									<p class="location-text bigtext">г. Алматы, ул. Шаляпина, 15</p>
+								</div>
+
+								<img
+									src="assets/images/map.png"
+									alt="Map"
+									class="locations-map"
+								/>
+
+								<div class="locations-popup">
+									<p class="name text">Grand Tour</p>
+				
+									<div class="review2">
+										<div class="rating">
+											<p class="rating-text">9.6</p>
+										</div>
+				
+										<p class="title bigtext">453 отзывов</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="contacts vertical">
+								<h5 class="contacts-title">Контакты</h5>
+
+								<p class="contacts-text">
+									<span>Адрес:</span>
+									г. Алматинская область
+								</p>
+
+								<p class="contacts-text">
+									<span>Телефон:</span>
+									+7 727 876 67 56
+								</p>
+
+								<p class="contacts-text">
+									<span>Сайт:</span>
+									gotour
+								</p>
+
+								<p class="contacts-text">
+									<span>Instagram:</span>
+									gotour
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="reviews">
+					<div class="reviews-header">
+						<h3 class="reviews-title">Отзывы гостей</h3>
+						
+						<div class="horizontal horizontal-inline">
+							<div class="review2">
+								<div class="rating">
+									<p class="rating-text">9.6</p>
+								</div>
+							
+								<div>
+									<p class="title bigtext">453 отзывов</з>
+									<p class="text bigtext btn" onclick="handleModal('review_write')">Написать отзыв</з>
+								</div>
+							</div>
+							
+							<div class="reviews-header__buttons">
+								<div class="btn" onclick="slider('reviews').prevSlide()">
+									<img src="assets/icons/chevron.svg" alt="Back" />
+								</div>
+								<div class="btn" onclick="slider('reviews').nextSlide()">
+									<img src="assets/icons/chevron.svg" alt="Next" />
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="reviews-wrap carousel" id="reviews">
+						<div class="carousel-inner">
+							<div class="review carousel-item">
+								<img
+									src="assets/icons/hdots.svg"
+									alt="More"
+									class="review-button btn"
+									onclick="handleModal('review')"
+								/>
+								<h5 class="review-title bigtext">Хостел Арлеон</h5>
+	
+								<div class="rating">
+									<p class="rating-text">9.8</p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+								</div>
+	
+								<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+	
+								<div class="review-footer">
+									<div class="author">
+										<img src="assets/icons/user.svg" alt="user" />
+										<p class="author-text bigtext">Емиль Газизов</p>
+									</div>
+	
+									<div class="date">
+										<p class="date-text">14:56</p>
+										<p class="date-dot">●</p>
+										<p class="date-text">10.11.2023</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="review carousel-item">
+								<img
+									src="assets/icons/hdots.svg"
+									alt="More"
+									class="review-button btn"
+									onclick="handleModal('review')"
+								/>
+								<h5 class="review-title bigtext">Зона отдыха Оазис</h5>
+	
+								<div class="rating">
+									<p class="rating-text">8.1</p>
+									<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+								</div>
+	
+								<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+	
+								<div class="review-footer">
+									<div class="author">
+										<img src="assets/icons/user.svg" alt="user" />
+										<p class="author-text bigtext">Матвей Радужнев</p>
+									</div>
+	
+									<div class="date">
+										<p class="date-text">14:56</p>
+										<p class="date-dot">●</p>
+										<p class="date-text">10.11.2023</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="review carousel-item">
+								<img
+									src="assets/icons/hdots.svg"
+									alt="More"
+									class="review-button btn"
+									onclick="handleModal('review')"
+								/>
+								<h5 class="review-title bigtext">Хостел Арион</h5>
+	
+								<div class="rating">
+									<p class="rating-text">9.8</p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+								</div>
+	
+								<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+	
+								<div class="review-footer">
+									<div class="author">
+										<img src="assets/icons/user.svg" alt="user" />
+										<p class="author-text bigtext">Амир Ванев</p>
+									</div>
+	
+									<div class="date">
+										<p class="date-text">14:56</p>
+										<p class="date-dot">●</p>
+										<p class="date-text">10.11.2023</p>
+									</div>
+								</div>
+							</div>
+	
+							<div class="review carousel-item">
+								<img
+									src="assets/icons/hdots.svg"
+									alt="More"
+									class="review-button btn"
+									onclick="handleModal('review')"
+								/>
+								<h5 class="review-title bigtext">Хостел Арион</h5>
+	
+								<div class="rating">
+									<p class="rating-text">9.8</p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+								</div>
+	
+								<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+	
+								<div class="review-footer">
+									<div class="author">
+										<img src="assets/icons/user.svg" alt="user" />
+										<p class="author-text bigtext">Амир Ванев</p>
+									</div>
+	
+									<div class="date">
+										<p class="date-text">14:56</p>
+										<p class="date-dot">●</p>
+										<p class="date-text">10.11.2023</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>dragSlider("reviews")</script>
+				</section>
+
+				<section class="popular">
+					<h3 class="popular-title">Вас может заинтересовать</h3>
+					<div id="popular" class="card1-wrap carousel">
+						<div class="carousel-inner">
+							<div class="card1 carousel-item">
+								<div class="card">
+									<a href="detail.html">
+										<img
+											src="assets/images/hostel1.jpeg"
+											alt="Hostel"
+											class="card-image"
+										/>
+									</a>
+
+									<div class="card-content">
+										<div class="card-content__top">
+											<a href="detail.html">
+												<h6 class="title bigtext">Grand hostel</h6>
+											</a>
+
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+										</div>
+
+										<div class="card-content__bottom horizontal horizontal-inline">
+											<div class="price">
+												<p>от</p>
+												<h5>2500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+
+											<div class="rating">
+												<p class="rating-text">9.6 </p>
+												<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card1 carousel-item">
+								<div class="card">
+									<a href="detail.html">
+										<img
+											src="assets/images/hostel2.jpeg"
+											alt="Hostel"
+											class="card-image"
+										/>
+									</a>
+
+									<div class="card-content">
+										<div class="card-content__top">
+											<a href="detail.html">
+												<h6 class="title bigtext">Grand hostel</h6>
+											</a>
+
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+										</div>
+
+										<div class="card-content__bottom horizontal horizontal-inline">
+											<div class="price">
+												<p>от</p>
+												<h5>2500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+
+											<div class="rating">
+												<p class="rating-text">6 </p>
+												<img src="assets/icons/rating/third.svg" alt="Rating" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card1 carousel-item">
+								<div class="card">
+									<a href="detail.html">
+										<img
+											src="assets/images/hostel3.jpeg"
+											alt="Hostel"
+											class="card-image"
+										/>
+									</a>
+
+									<div class="card-content">
+										<div class="card-content__top">
+											<a href="detail.html">
+												<h6 class="title bigtext">Grand hostel</h6>
+											</a>
+
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+										</div>
+
+										<div class="card-content__bottom horizontal horizontal-inline">
+											<div class="price">
+												<p>от</p>
+												<h5>2500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+
+											<div class="rating">
+												<p class="rating-text">9.9 </p>
+												<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card1 carousel-item">
+								<div class="card">
+									<a href="detail.html">
+										<img
+											src="assets/images/hostel4.jpeg"
+											alt="Hostel"
+											class="card-image"
+										/>
+									</a>
+
+									<div class="card-content">
+										<div class="card-content__top">
+											<a href="detail.html">
+												<h6 class="title bigtext">Grand hostel</h6>
+											</a>
+
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+										</div>
+
+										<div class="card-content__bottom horizontal horizontal-inline">
+											<div class="price">
+												<p>от</p>
+												<h5>2500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+
+											<div class="rating">
+												<p class="rating-text">9.4 </p>
+												<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card1 carousel-item">
+								<div class="card">
+									<a href="detail.html">
+										<img
+											src="assets/images/hostel3.jpeg"
+											alt="Hostel"
+											class="card-image"
+										/>
+									</a>
+
+									<div class="card-content">
+										<div class="card-content__top">
+											<a href="detail.html">
+												<h6 class="title bigtext">Grand hostel</h6>
+											</a>
+
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+										</div>
+
+										<div class="card-content__bottom horizontal horizontal-inline">
+											<div class="price">
+												<p>от</p>
+												<h5>2500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+
+											<div class="rating">
+												<p class="rating-text">9.9 </p>
+												<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card1 carousel-item">
+								<div class="card">
+									<a href="detail.html">
+										<img
+											src="assets/images/hostel4.jpeg"
+											alt="Hostel"
+											class="card-image"
+										/>
+									</a>
+
+									<div class="card-content">
+										<div class="card-content__top">
+											<a href="detail.html">
+												<h6 class="title bigtext">Grand hostel</h6>
+											</a>
+
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+										</div>
+
+										<div class="card-content__bottom horizontal horizontal-inline">
+											<div class="price">
+												<p>от</p>
+												<h5>2500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+
+											<div class="rating">
+												<p class="rating-text">9.4 </p>
+												<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>dragSlider("popular")</script>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer-wrap box">
+			<div class="footer-wrap__line">
+				<img
+					src="assets/icons/logo-white.svg"
+					alt="QazBooking"
+				/>
+			</div>
+
+			<div class="footer-wrap__line horizontal">
+				<nav class="footer-menu vertical">
+					<a href="filter.html">
+						<h5 class="text">Хостелы</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Базы отдыха</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Активный отдых</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Туры</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Оздоровительный отдых</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Детские лагеря</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Транспорт</h5>
+					</a>
+				</nav>
+
+				<nav class="footer-menu vertical">
+					<a href="interestings.html">
+						<h5 class="text">Интересное</h5>
+					</a>
+					<a href="#">
+						<h5 class="text">FAQ</h5>
+					</a>
+				</nav>
+
+				<div class="footer-links">
+					<div class="social">
+						<h4 class="text">Мы в социальных сетях</h4>
+						<div class="social-icons horizontal">
+							<a href="#">
+								<img src="assets/icons/facebook-white.svg" alt="Facebook" />
+							</a>
+							<a href="https://www.instagram.com/alakol_zona_otdykha_amilina/">
+								<img src="assets/icons/instagram-white.svg" alt="Instagram" />
+							</a>
+						</div>
+					</div>
+
+					<div class="zerone horizontal horizontal-inline">
+						<p class="text">Разработка сайта — <a href="https://zeronetech.kz" tabindex="_blank" class="text">Zerone Technology</a></p>
+						<img
+							src="https://zeronetech.kz/zerone-min-logo.svg"
+							width="36"
+							height="38"
+							alt="Zerone Technology"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- MODAL -->
+	<div id="auth" class="modal">
+		<div class="modal-background" onclick="handleModal('auth')"></div>
+		<div class="modal-wrap vertical">
+			<div class="close center btn" onclick="handleModal('auth')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Регистрация</h4>
+
+			<div class="modal-wrap__line vertical">
+				<div class="input-box">
+					<label for="email" class="label">Email</label>
+					<input type="text" id="email" class="input" />
+				</div>
+				<div class="input-box">
+					<label for="password" class="label">Пароль</label>
+					<input type="text" id="password" class="input" />
+				</div>
+			</div>
+
+			<div class="modal-wrap__line vertical">
+				<div class="button">
+					<p class="button-text">Регистрация</p>
+				</div>
+				<div class="button secondary" onclick="changeAuth()">
+					<p class="button-text">Войти</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="galery" class="modal">
+		<div class="modal-background" onclick="handleModal('galery')"></div>
+		<div class="modal-wrap vertical">
+			<div class="close center btn" onclick="handleModal('galery')">
+				<img src="assets/icons/close-white.svg" alt="Close" />
+			</div>
+
+			<p class="modal-counter">1/10</p>
+			<h5 class="modal-title">Двухместный номер Делюкс с 1 кроватью</h5>
+
+			<div class="main_image">
+				<img
+					src="assets/images/arleon4.png"
+					alt="Arleon 4"
+					class="image"
+				/>
+				<img
+					src="assets/images/hostel1.jpeg"
+					alt="Arleon 1"
+					class="image active"
+				/>
+				<img
+					src="assets/images/arleon2.png"
+					alt="Arleon 2"
+					class="image"
+				/>
+				<img
+					src="assets/images/arleon3.png"
+					alt="Arleon 3"
+					class="image"
+				/>
+				<img
+					src="assets/images/arleon4.png"
+					alt="Arleon 4"
+					class="image"
+				/>
+				<img
+					src="assets/images/hostel1.jpeg"
+					alt="Arleon 1"
+					class="image"
+				/>
+			</div>
+
+			<div class="carousel">
+				<div class="carousel-inner">
+					<img
+						src="assets/images/arleon4.png"
+						alt="Arleon 4"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/hostel1.jpeg"
+						alt="Arleon 1"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon2.png"
+						alt="Arleon 2"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon3.png"
+						alt="Arleon 3"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon4.png"
+						alt="Arleon 4"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/hostel1.jpeg"
+						alt="Arleon 1"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+				</div>
+			</div>
+
+			<div class="modal-buttons horizontal">
+				<div class="btn center">
+					<img src="assets/icons/chevron-white.svg" alt="Back" />
+				</div>
+				<div class="btn center">
+					<img src="assets/icons/chevron-white.svg" alt="Next" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review_write" class="modal">
+		<div class="modal-background" onclick="handleModal('review_write')"></div>
+		<div class="modal-wrap vertical">
+			<div class="close center btn" onclick="handleModal('review_write')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="modal-title">Написать отзыв</h4>
+
+			<div class="modal-box vertical">
+				<div class="vertical">
+					<p class="modal-text">Оценить сервис</p>
+					
+					<div class="stars horizontal">
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+					</div>
+				</div>
+
+				<div class="input-box vertical">
+					<textarea placeholder="Напишите отзыв" class="input"></textarea>
+					<p class="label">0/200</p>
+				</div>
+
+				<div class="button" onclick="handleModal('review_write'), handleModal('review_send')">
+					<p class="button-text">Отправить</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review_send" class="modal">
+		<div class="modal-background" onclick="handleModal('review_send')"></div>
+		<div class="modal-wrap vertical center">
+			<div class="close center btn" onclick="handleModal('review_send')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<img src="assets/icons/star-square.svg" alt="Star" />
+			<h4 class="modal-title">Ваш отзыв отправлен</h4>
+			<p class="modal-text">Отзыв скоро появится на странице. Спасибо за обратную связь.</p>
+
+			<div class="button" onclick="handleModal('review_send')">
+				<p class="button-text">Закрыть</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="review" class="modal">
+		<div class="modal-background" onclick="handleModal('review')"></div>
+		<div class="modal-wrap vertical">
+			<div class="close center btn" onclick="handleModal('review')">
+				<img src="assets/icons/close-grey.svg" alt="Close" />
+			</div>
+
+			<h4 class="modal-title">Хостел Арлеон</h4>
+
+			<div class="carousel">
+				<div class="carousel-inner">
+					<img
+						src="assets/images/arleon2.png"
+						alt="Hostel 2"
+						class="carousel-item"
+					/>
+					<img
+						src="assets/images/arleon3.png"
+						alt="Hostel 3"
+						class="carousel-item"
+					/>
+					<img
+						src="assets/images/arleon4.png"
+						alt="Hostel 4"
+						class="carousel-item"
+					/>
+				</div>
+			</div>
+
+			<a href="hostels.html" class="modal-button horizontal horizontal-inline">
+				<h6 class="modal-button__text">Посмотреть место</h6>
+				<img src="assets/icons/chevron.svg" alt="chevron" />
+			</a>
+
+			<div class="modal-info vertical">
+				<div class="rating">
+					<p class="rating-text">9.6</p>
+					<img src="assets/icons/rating/fifth.svg" alt="rating" />
+				</div>
+				
+				<p class="modal-info__text">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал за последнее время, персонал очень отзывчивый. По запросу предоставили дополнительный комплект полотенец и тапочек</p>
+				
+				<div class="modal-info__bottom horizontal">
+					<div class="author">
+						<img src="assets/icons/user.svg" alt="User" />
+						<p class="author-text">Емиль Газизов</p>
+					</div>
+					<div class="date">
+						<p class="date-text">14:56</p>
+						<p class="date-dot text">•</p>
+						<p class="date-text">10.11.2023</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

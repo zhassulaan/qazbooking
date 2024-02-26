@@ -1,0 +1,434 @@
+@import vars
+@import _medias/home
+@import _medias/interestings
+@import _medias/interestingsdetail
+@import _medias/filter
+@import _medias/detail
+@import _medias/hostels
+@import _medias/profile
+@import _medias/modals
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	.box
+		width: 914px
+
+	// LAYOUT
+	.header
+		&-wrap
+			padding-right: 25px
+			padding-left: 25px
+		&-logo
+			width: 190px
+			margin-right: 45px
+		&-location
+			width: 156px
+			margin-right: 90px
+		&-links
+			width: 212px
+			&__social
+				gap: 18px
+		.button
+			width: 100px
+			margin-left: 19px
+
+	.footer
+		&-wrap
+			padding-right: 80px
+			padding-left: 78px
+			&__line
+				gap: 33px
+		&-menu
+			width: 194px
+		&-links
+			width: 294px
+
+	// COMPONENTS
+	.search
+		&-date
+			min-width: 136px
+			max-width: 136px
+			padding: 16px 8px
+		.button#search_button
+			min-width: 124px
+			max-width: 124px
+
+	.card4
+		.card
+			&-image
+				min-width: 169px
+				max-width: 169px
+				height: 169px
+			&-info
+				padding: 12.5px 12px 12.5px 18px
+				&__left
+					width: 331.875px
+					margin-right: 17.625px
+					padding-right: 17.625px
+					.features
+						gap: 4px 8px
+						&-text
+							color: $grey
+
+	.card
+		&_list
+			gap: 22px
+
+	.reviews
+		&-header .review2
+			margin-right: 363px
+
+	.blog
+		min-width: 288px
+		max-width: 288px
+	
+	.carousel
+		cursor: grab
+		&.active
+			cursor: grabbing
+			cursor: -webkit-grabbing
+			// transform: scale(1.02)
+		&-inner
+			gap: 22px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.box
+		width: 630px
+
+	// LAYOUT
+	.header
+		top: 0
+		&-wrap
+			padding-right: 16px
+			padding-left: 16px
+			.text
+				font-size: 18px
+		&-logo
+			width: max-content
+			margin-right: 32px
+			&__desktop
+				display: none
+			&__mobile
+				display: block
+		&-location
+			width: 108px
+			height: 19px
+			margin-right: 62px
+			.icon
+				width: 16px
+				height: 16px
+				padding: 1.33px 2px
+		&-links
+			width: 206px
+			&__social
+				gap: 12px
+		.button
+			width: 80px
+			height: 44px
+			margin-left: auto
+			&-text
+				display: none
+		&-menu
+			gap: 8px
+			padding-top: 8.5px
+			.text
+				line-height: 19px
+
+	.footer
+		&-wrap
+			padding-right: 55px
+			padding-left: 54px
+			&__line
+				flex-wrap: wrap
+				gap: 33px 8%
+		&-links
+			width: 100%
+			margin-top: 24px
+			.social .text
+				font-size: 22px
+			.zerone
+				margin-top: 48px
+
+	// COMPONENTS
+	.search
+		display: grid
+		grid-gap: 8px
+		grid-template-areas: "text text" "date1 date2"
+		height: fit-content
+		max-height: 136px
+		&-text
+			width: 100%
+			grid-area: text
+		&-date
+			min-width: 100%
+			max-width: 100%
+			padding: 16px 20px
+			&#from
+				grid-area: date1
+			&#to
+				grid-area: date2
+		.button
+			display: none
+
+	.action
+		&_list
+			flex-direction: column
+			gap: 16px
+
+	.card
+		&_list
+			gap: 22px
+
+	.reviews
+		&-header .review2
+			margin-right: 79px
+	
+	.blog
+		min-width: 307px
+		max-width: 307px
+
+	.carousel
+		&-inner
+			gap: 16px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.box
+		width: 85.4167vw
+
+	// LAYOUT
+	.header
+		&-wrap
+			padding: 14px 8px 10px
+			.text
+				font-size: 16px
+		&-location
+			width: 86px
+			margin-right: 0
+			padding: 0
+		&-links
+			display: none !important
+
+	.footer
+		&-wrap
+			grid-gap: 67px
+			padding: 19px 4.26667vw 86px
+			&__line
+				flex-direction: column
+				gap: 44px
+		&-menu
+			width: 100%
+		&-links
+			.social .text
+				font-size: 20px
+			.zerone
+				width: 75%
+
+	.main
+		margin-top: 152px
+		.breadcrumbs
+			margin-bottom: 20px
+
+	// COMPONENTS
+	.blog
+		min-width: 41.667vw
+		max-width: 41.667vw
+
+	.card4
+		.card
+			position: relative
+			flex-direction: column
+			gap: 0
+			&-image
+				min-width: 100%
+				max-width: 100%
+				height: 170px
+			&-info
+				flex-direction: column
+				padding: 24px 16px 20px
+				&__left
+					gap: 8px
+					width: 100%
+					border-right: 0
+					margin-right: 0
+					padding-right: 0
+					.top
+						margin-bottom: 8px
+						&-title
+							font-size: 20px
+							line-height: 24px
+						&-button
+							position: absolute
+							top: 16px
+							right: 17px
+					.location-text,
+					.locations-button,
+					.reviews-title,
+					.reviews-text
+						font-size: 13px
+					.features-text
+						line-height: 17px
+				&__right
+					flex-direction: row
+					width: 100%
+					border-top: 1px solid #E3E3E3
+					margin-top: 15.5px
+					padding-top: 15.5px
+					.price-description
+						font-size: 14px
+						line-height: 17px
+					.button
+						width: 130px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	h1
+		font-size: 32px
+	h2
+		font-size: 24px
+		line-height: 29px
+
+	.box
+		width: 91.467vw
+		margin: 0 4.26667vw
+
+	.desktop
+		display: none
+	.mobile
+		display: flex
+
+	// LAYOUT
+	.header,
+	.footer
+		&-wrap
+			width: 100vw
+			margin: 0
+
+	.header
+		&-wrap
+			padding: 14px 8px 10px
+			.text
+				font-size: 16px
+		&-location
+			width: 86px
+			margin-right: 0
+			padding: 0
+		&-links
+			display: none !important
+
+	.footer
+		&-wrap
+			grid-gap: 67px
+			padding: 19px 4.26667vw 86px
+			&__line
+				flex-direction: column
+				gap: 44px
+		&-menu
+			width: 100%
+		&-links
+			.social .text
+				font-size: 20px
+			.zerone
+				width: 75%
+
+	// COMPONENTS
+	.search
+		&-text
+			width: 87.2vw
+		&-date
+			width: calc(calc(87.2vw - 4px) / 2)
+
+	.author,
+	.date
+		&-text
+			font-size: 14px
+			line-height: 17px
+
+	.date
+		gap: 6px
+		&-dot
+			font-size: 14px
+
+	.price
+		justify-content: start
+		height: 24px
+		&-description
+			line-height: 16px
+
+	.action
+		&_list
+			flex-direction: row
+		&-text
+			display: none
+
+	.card
+		&_list
+			gap: 30px
+
+	.card2
+		.card
+			min-width: 318px
+			max-width: 318px
+
+	.card3
+		.card
+			flex-direction: column
+			border: none
+			padding: 0
+			&-galery
+				gap: 16px
+				width: 100%
+				&__main
+					display: none
+				&__mini
+					overflow: scroll
+					&::-webkit-scrollbar
+						display: none
+					&-inner
+						gap: 8px
+					.image
+						width: 282px
+						height: 198px
+			&-content
+				min-width: 100%
+				padding-right: 4.26667vw
+				&__title
+					font-size: 20px
+					line-height: 24px
+				&__fotter
+					flex-direction: column
+					border-top: 0
+					margin-top: 24px
+					padding-top: 0
+					.left
+						gap: 8px
+						border-bottom: 1px solid #E3E3E3
+						margin-bottom: 23.5px
+						padding-bottom: 23.5px
+						&-title,
+						&-text
+							display: none
+					.right
+						display: flex
+						justify-content: space-between
+						.button
+							margin: 0
+
+	.review
+		min-width: 300px
+		max-width: 300px
+		&-text
+			font-size: 16px
+
+	.reviews
+		&-header
+			margin-right: 4.26667vw
+			.review2
+				margin-right: auto
+		&-wrap
+			margin-top: 24px
+
+	.carousel
+		&-inner
+			gap: 8px
