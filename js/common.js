@@ -214,9 +214,8 @@ function slider(id, full = false) {
 		mainImages[activeSlider].classList.add('active');
 	}
 	function hideImages() {
-		for (let i = 0; i < length; i++) {
+		for (let i = 0; i < length; i++)
 			mainImages[i].classList.remove('active');
-		}
 	}
 	function updateTransform() {
 		const newPosition = activeSlider * (width + 30);
@@ -225,14 +224,14 @@ function slider(id, full = false) {
 	function prevSlide() {
 		if (activeSlider > 0)
 			activeSlider--;
-		updateTransform();
 		changeImage();
+		updateTransform();
 	}
 	function nextSlide() {
 		if ((!full && activeSlider < maxIndex - 2) || (full && activeSlider < length - 1))
 			activeSlider++;
-		updateTransform();
 		changeImage();
+		updateTransform();
 	}
 
 	return { prevSlide, nextSlide };
